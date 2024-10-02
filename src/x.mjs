@@ -3,7 +3,8 @@ import {ModuleEditor} from './view/module-editor.mjs'
 import {NodeEditor} from './view/node-editor.mjs'
 import {NodeView} from './view/node-view.mjs'
 import {setupHideables} from './view/hideable.mjs'
-import Nodel from '../lib/nodel.min.mjs'
+//import Nodel from '../lib/nodel.min.mjs'
+import Nodel from 'nodel'
 
 var state
 

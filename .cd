@@ -1,15 +1,18 @@
 #!/bin/bash
 
-title "F Project"
+header "F Project"
+emerg "STOP linkerline, now leaderline, doesnt work with abs repositioning"
+debug "plus its bloated, so PEMDAS:"
+infos "$B_TRIANGLE SIMPLELINE extract home $B_ARROW NODEL replace package $B_ARROW F PROJECT update imports"
 
-help .cd | indent
+#help .cd | indent "$B_CIRCLE "
 
 function run() {
-  serve
+  npm run dev
 }
 
 function update() {
   rm -rf lib && mkdir lib
-  wget "https://nodel.leonk.dev/nodel.min.mjs" -O lib/nodel.min.mjs
+	#wget "https://raw.githubusercontent.com/LeonKuhne/Nodel.js/gh-pages/nodel.min.mjs" -O lib/nodel.min.mjs
   wget https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js -O lib/highlight.min.js
 }
